@@ -2,20 +2,41 @@
   --animate-delay: 0.5s;
 }
 *{
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Roboto;
 }
 
 body{
-  background: #f2f2f2;
+  text-align: center;
+  background: #d6f6f4;
+  color: rgb(30, 90, 72);
   padding: 10px 30px;
 }
-
-input{
-  color: #333;
-  font-size: 1.2rem;
-  padding: 10px;
-  width: 100%;
+.container-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
+input{
+  color: rgb(68, 76, 186);
+  font-size: 1.2rem;
+  padding: 20px;
+  width: 50%;
+  border: 2px solid rgb(22, 147, 154);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+input:focus{
+  border: 2px solid rgb(6, 177, 143);
+  outline: none;
+
+}
+
 .main_gif_grid{
   display: flex;
   flex-direction: column;
@@ -29,9 +50,12 @@ input{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1.3rem;
 }
 
 .gif_item{
@@ -42,4 +66,32 @@ input{
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  color: rgb(108, 116, 238);
 }
+
+.gif_item:hover{
+  background-color: rgb(113, 243, 217);
+  z-index: 10;
+}
+
+.header{
+}
+
+.gif{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.gif:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+
+

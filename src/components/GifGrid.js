@@ -8,19 +8,19 @@ const GifGrid = ({category}) => {
 
 	return (
 		<div className="main_gif_grid">
-			<h3 className="category animate__animated animate__bounceIn">Category: {category}</h3>
+			<h2 className="animate__animated animate__bounceIn category">{category}</h2>
 			{/* loading con && */}
 			{loading && <p>Loading...</p>}
 			{/* loading con || */}
 			{loading ? (
-				<div className="animate__animated animate__flash">
+				<div key={1} id="loading" className="animate__animated animate__flash">
 					<img
 						src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
 						alt="loading"
 					/>
 				</div>
 			) : (
-				<div className="gif_grid">
+				<div key={2} className="gif_grid">
 					{gifs.map((image) => (
 						<>
 							<GifGridItem key={image.id} {...image} />

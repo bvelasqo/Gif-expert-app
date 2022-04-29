@@ -2,9 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const GifGridItem = ({id, title, url}) => {
-  console.log(url);
 	return (
-		<div className="gif_item">
+		<div className="gif_item animate__animated animate__zoomIn">
 			<img
 				key={id}
 				src={url}
@@ -17,9 +16,9 @@ const GifGridItem = ({id, title, url}) => {
 };
 
 GifGridItem.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   title: PropTypes.string.isRequired,
-  url: PropTypes.string,
+  url: PropTypes.string.isRequired,
 };
 
 export {GifGridItem};

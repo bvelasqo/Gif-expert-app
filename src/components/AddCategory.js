@@ -11,19 +11,24 @@ const AddCategory = ({setCategories}) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		if (inputValue.trim().length > 2) {
-			setCategories((categories) => [ inputValue, ...categories]);
+			setCategories((categories) => [inputValue, ...categories]);
 			setInputValue("");
-		} else alert("The category must have at least 3 characters");
+		} else console.log("The category must have at least 3 characters");
 	};
 
 	return (
 		<form onSubmit={handleSubmit}>
-			<input
-				type="text"
-				value={inputValue}
-        placeholder="Add a category"
-				onChange={handleInputChange}
-			/>
+			<div>
+				<div className="container-input">
+					<input
+						type="text"
+						value={inputValue}
+						placeholder="Add a category"
+						onChange={handleInputChange}
+					/>
+				</div>
+				<hr style={{width: "67%", borderColor:"white"}}/>
+			</div>
 		</form>
 	);
 };
