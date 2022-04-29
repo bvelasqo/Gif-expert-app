@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGridItem should render correctly 1`] = `
+<div
+  className="gif_item animate__animated animate__zoomIn"
+>
+  <img
+    alt="Title"
+    className="gif animate__animated animate__zoomIn"
+    key="l0HlW7QXQX5qQQq0U"
+    src="https://media1.giphy.com/media/l0HlW7QXQX5qQQq0U/200w.gif"
+  />
+  <p
+    className="title_image animate__animated animate__zoomIn animate__delay"
+  >
+    Title
+  </p>
+</div>
+`;

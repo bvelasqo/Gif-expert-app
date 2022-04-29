@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid should render correctly 1`] = `
+<div
+  className="main_gif_grid"
+>
+  <h3
+    className="category animate__animated animate__bounceIn"
+  >
+    Category: 
+    Dragon Ball
+  </h3>
+  <div
+    className="gif_grid"
+    key="2"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier cosa"
+      url="https://localhost/cualquiercosa.jpg"
+    />
+  </div>
+</div>
+`;
